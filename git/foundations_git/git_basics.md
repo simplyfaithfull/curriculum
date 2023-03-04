@@ -162,7 +162,7 @@ An atomic commit is a commit that includes changes related to only one feature o
 
 ### Changing the Git Commit Message Editor
 
-If you are using _Visual Studio Code_ (and you should be if you're following this curriculum) and you don't want to get stuck writing a commit message in [Vim](<https://en.wikipedia.org/wiki/Vim_(text_editor)>) because you accidentally used `git commit` without the message flag (`-m`), this command will make Visual Studio Code open a new tab with the ability to write your commit message and an optional description below it: `git config --global core.editor "code --wait"`.
+If you are using _Visual Studio Code_ (and you should be if you're following this curriculum) and you don't want to get stuck writing a commit message in [Vim](<https://en.wikipedia.org/wiki/Vim_(text_editor)>) because you accidentally used `git commit` without the message flag (`-m`), this command will make Visual Studio Code open a new tab with the ability to write your commit message and an optional description below it: `git config --global core.editor "code --wait"`. If that doesn't work use `git config --global core.editor "code --new window --wait"`.
 
 There will be no confirmation or any output on the terminal after entering this command. To make a commit with Visual Studio Code as the text editor, make sure to use the `git commit` command without the `-m` flag. Just type `git commit` and no message after that. Once you do this, a new tab will open. Now you can write your message, and provide more information if you want, right below it. After typing your commit message, save it and exit the tab.
 
